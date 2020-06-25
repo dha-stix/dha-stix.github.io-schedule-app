@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1e3cb;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9b384;
+    height: 7vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 85vh;
+    color: #ca5116;
+    font-family: 'Lato', sans-serif;
+}
+.output-task {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+.output-task table {
+    width: 80%;
+}
+.task-input {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 35vh;
+}
+.schedule, .subject{
+    width: 40%;  
+    padding: 5px;
+}
+.submit {
+    padding: 10px;
+    background-color: #581c0c;
+    color: #eeeeee;
+    width: 150px;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+}
+td {
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid #f67280;
+    border-collapse: collapse;
+    padding: 5px;
+    width: 50%;
+    margin: auto;
+}
+footer {
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+    background-color: #f9b384;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    padding: 7px;
+}
+footer span {
+    color: red;
+}
+.response {
+    width: 70%;
+    background: linear-gradient(#f9b384, #581c0c);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    border-radius: 40px 10px;
+    color: #eeeeee;
+    align-items: center;
+    font-family: 'Lato', sans-serif;      
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.res img {
+    width: 30%;
+    height: 90%;
+}
+.res {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.full-width {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.active {
+    visibility: visible;
+    opacity: 1;
+}
+@media screen and (max-width : 768px) {
+    .task-input {
+        height: 45vh;
+    }
+    .output-task {
+        height: 40vh;
+    }
+}

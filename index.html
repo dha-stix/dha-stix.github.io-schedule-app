@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/alarmclock.png">
+    <script src="https://kit.fontawesome.com/0c7ff73f65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h2 id="timer"></h2>  
+    </header>  
+    
+                                        <!-- INPUTS -->
+    <main>
+        <h3>Add Task & Schedule</h3>
+        <div class="task-input">
+            <label> Task subject</label>
+            <input type="text" class="subject">
+            <label>Choose Schedule</label>
+            <select class="schedule">
+                <option value="10">Next 10 secs</option>
+                <option value="20">Next 20 secs</option>
+                <option value="30">Next 30 secs</option>
+                <option value="45">Next 45 secs</option>
+            </select>
+            <button class="submit">ADD TASK</button>
+        </div>
+        <div class="output-task">
+            <table>
+                <thead>
+                    <th>Task</th>
+                    <th>Schedule (secs)</th>
+                </thead>
+                <tbody> 
+                    
+                </tbody>
+            </table>
+        </div>
+    </main>
+                                <!-- END OF INPUTS -->
+      <footer>
+        <p>Contact Developer <span><i class="fas fa-heart"></i></span>:
+          <a href="https://github.com/dha-stix"><i class="fab fa-github"></i></a>   
+          <a href="https://www.facebook.com/asaolu.david.9"><i class="fab fa-facebook"></i></a> 
+          <a href="https://www.linkedin.com/in/david-asaolu234/"><i class="fab fa-linkedin-in"></i></a>
+        </p>         
+    </footer>
+
+    <div class="full-width">
+        <div class="response">
+            <div class="res">
+                <img src="./images/bell-removebg-preview.png" alt="alarm">
+                <h4 class="alarm-text"></h4>
+            </div>
+            <button class="submit cancel">Close</button>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
